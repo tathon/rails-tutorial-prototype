@@ -38,7 +38,6 @@ describe SessionsController do
 		end		
 		
     describe "with valid email and password" do
-
       before(:each) do
         @user = Factory(:user)
         @attr = { :userid => @user.userid, :password => @user.password }

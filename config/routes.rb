@@ -4,7 +4,7 @@ ProtoApp::Application.routes.draw do
 	match '/signin', :to => 'sessions#new'
 	match '/signout', :to => 'sessions#destroy'
 	
-	match '/ps451', :to => 'pages#ps451'
+	match '/ps451', :to => 'reports#ps451'
 	root :to => "pages#home"
 	
 	# get "pages/home"
