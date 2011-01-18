@@ -1,4 +1,6 @@
 ProtoApp::Application.routes.draw do
+  get "users/new"
+
 	match '/ps451', :to => 'pages#ps451'
 	root :to => "pages#home"
 	
