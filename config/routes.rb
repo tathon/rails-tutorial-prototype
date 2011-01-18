@@ -1,7 +1,8 @@
 ProtoApp::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/ps451"
+	match '/ps451', :to => 'pages#ps451'
+	root :to => "pages#home"
+	
+	# get "pages/home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
